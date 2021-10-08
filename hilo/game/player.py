@@ -10,9 +10,9 @@ class Player:
 
     def keep_playing(self):
         # if game over
-        if self.points <= 0:
+        if self.points <= 0 or self.points >= 1000:
             return False
-        
+            
         # keep playing?
         choice = input("Keep playing? [y/n] ")
         if choice.lower() == 'y':
